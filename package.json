@@ -1,0 +1,26 @@
+{
+  "name": "file_upload_s3",
+  "version": "1.0.0",
+  "description": "just trying to take multiple file and to upload it in s3 and also for zip folder unzip the the folder then uploads the files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Arpan",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.0",
+    "@hapi/inert": "^6.0.4",
+    "@hapi/jwt": "^2.1.0",
+    "@hapi/vision": "^6.1.0",
+    "amazon-s3-uri": "^0.1.1",
+    "aws-sdk": "^2.1095.0",
+    "dotenv": "^10.0.0",
+    "hapi-swagger": "^14.2.4",
+    "joi": "^17.4.2",
+    "pg": "^8.7.1",
+    "sequelize": "^6.7.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}
