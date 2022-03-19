@@ -4,10 +4,10 @@ require('dotenv').config();
 aws.config.update({
 	secretAccessKey : process.env.AWS_ACCESS_KEY_ID,
 	acessKeyId : process.env.AWS_SECRET_ACCESS_KEY,
-	region:'us-east-1'
+	region:process.env.REGION
 });
 
-const bucketName = 'traqworx-files';
+const bucketName = process.env.BUCKET_NAME;
 
 const s3 = new aws.S3({
     apiVersion: '2006-03-01',
